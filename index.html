@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookshelf.xyz</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">welcome to <a href="index.html" class="logo"><span class="logo">bookshelf</span></a></h1>
+        <h3 class="subtitle">---- a corner of the internet crafted for the things you read</h3>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="form-container">
+                <h3 class="subheading">-- add to your bookshelf --</h3>
+                <form action="#">
+                    <label for="title">1. name</label>
+                    <input type="text" id="title" name="title" placeholder="what's the book's name?">
+                    <label for="author">2. author</label>
+                    <input type="text" id="author" name="author" placeholder="who wrote it?">
+                    <label for="genre">3. genre</label>
+                    <input type="text" id="genre" name="genre" placeholder="what genre is it?">
+                    <button type="button" id="add-book-button" class="button" disabled="disabled">add</button>
+                </form>
+            </div>
+            <div class="shelf-container">
+                <h3 class="subheading">-- my bookshelf --</h3>
+                <div class="bookshelf">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

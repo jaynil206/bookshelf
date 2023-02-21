@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif; 
+    font-weight: 300;
+    text-decoration: none; 
+    color: #5b616b; 
+    /* border: solid 1px red;  */
+}
+
+
+/*CSS FOR THE HEADER*/
+
+header {
+    margin: 5% 5% 3%; 
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.logo {
+    text-decoration: overline; 
+    font-weight: 600; 
+    cursor: pointer;
+}
+
+.subtitle {
+    margin-top: 10px; 
+    animation: typing 5s steps(900) forwards;
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+
+/*CSS FOR THE MAIN*/
+
+.main-container {
+    display: grid; 
+    grid-template-columns: 35% 60%;
+    gap: 5%;
+    width: 90%; 
+    margin: auto; 
+}
+
+.form-container {
+    width: 100%;  
+    margin: 5% auto;
+    background-color: #f6f6f6;
+    border-top: solid 10px; 
+    padding: 10%; 
+}
+
+.shelf-container {
+    width: 100%;
+    margin: 3% auto; 
+    background-color: #f6f6f6; 
+    border-top: solid 10px; 
+    padding: 5%; 
+}
+
+/*CSS FOR THE FORM SECTION*/
+
+.button {
+    width: 25%; 
+    min-width: 80px; 
+    height: 35px; 
+    margin-top: 20px; 
+    float: right; 
+    background-color: #5b616b;
+    border: none; 
+    color: white;
+    font-size: 1rem; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+
+.button:active {
+    width: 23%;
+    min-width: 75px;  
+    height: 30px; 
+}
+
+.button:disabled {
+    background-color: #afb2b8;
+    cursor: default; 
+}
+
+.form-container label {
+    display: block; 
+    margin: 10px 0; 
+    font-weight: 400; 
+}
+
+.form-container input {
+    margin-bottom: 20px; 
+    width: 100%; 
+    height: 40px; 
+    font-size: 1rem;
+    border: none; 
+    border-bottom: solid 2.5px #afb2b8; 
+    padding-left: 10px; 
+    transition: height .2s ease-in-out, margin-bottom .2s ease-in-out, font-size .1s ease-in-out;
+    outline: none;
+}
+
+.form-container input:focus {
+    height: 50px; 
+    border-bottom: solid 2.5px #5b616b;
+    font-size: 1.25rem; 
+    margin-bottom: 40px; 
+}
+
+input:not(:placeholder-shown) {
+    border-bottom: solid 4px rgb(66, 147, 66); 
+}
+
+
+.subheading {
+    margin-bottom: 40px; 
+    font-weight: 600;
+}
+
+/* CSS FOR THE BOOK DISPLAY */
+
+.bookshelf {
+    width: 100%; 
+    height: 400px; 
+    display: flex; 
+    overflow-x: auto;
+}
+
+.book {
+    width: 40%; 
+    height: 350px;  
+    min-width: 250px; 
+    border-left: solid 16px #5b616b; 
+    background-color: white;
+    padding: 5% 2.5%;
+    box-shadow: 10px 10px #afb2b8; 
+    margin: 0 60px 0 0;
+}
+
+.book:last-child {
+    margin-right: 20px; 
+}
+
+.book h3 {
+    margin: 0 auto 10px; 
+    font-weight: 600; 
+    font-size: 1.5rem; 
+}
+
+.book h5 {
+    font-size: 1rem; 
+}
+
+.book p {
+    margin: 30px auto 10px; 
+    font-size: 1rem; 
+}
+
+.edit-mode {
+    transition: all 0.25s ease-in-out; 
+    padding-left: 30px; 
+    box-shadow: none; 
+}
+
+.id {
+    display: none; 
+}
+
+.information {
+    height: 80%; 
+}
+
+.interactive {
+    height: 20%;
+    margin: 20px auto;
+    padding: 2% 0;  
+}
+
+.edit {
+    width: auto;
+    margin-right: 20px; 
+    height: 30px;  
+    color: #5b616b; 
+    background-color: #f6f6f6; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    border: solid 2px; 
+    padding: 0 20px; 
+    cursor: pointer;
+} 
+
+.edit:active, .remove:active {
+    background-color: #5b616b;
+    color: #f6f6f6;
+    border: none; 
+}
+
+.remove {
+    width: auto;
+    margin-right: 20px; 
+    height: 30px;  
+    color: #f6f6f6; 
+    background-color: #5b616b; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    border: none; 
+    padding: 0 20px; 
+    cursor: pointer; 
+}
+
+.save-changes {
+    width: auto;
+    margin-right: 20px; 
+    height: 30px; 
+    background-color: #f6f6f6;
+    color: #5b616b;
+    font-size: 1rem; 
+    font-weight: 600; 
+    border: solid 2px; 
+    padding: 0 20px; 
+    cursor: pointer; 
+}
+
+
